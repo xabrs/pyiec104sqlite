@@ -1,0 +1,7 @@
+CREATE TABLE  IF NOT EXISTS `data` (
+	`id`	INTEGER NOT NULL ,
+	`dt`	DATETIME,
+	`v`	REAL NOT NULL,
+	`q`	INTEGER NOT NULL
+);
+CREATE UNIQUE INDEX IF NOT EXISTS `tag_dt` ON `data` (`id` ,`dt` );
